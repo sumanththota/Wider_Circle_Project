@@ -11,10 +11,10 @@ CREATE TABLE IF NOT EXISTS employees (
 );
 
 INSERT INTO employees (name, title, manager_id) VALUES 
-('Michael Chen', 'CEO', NULL),
-('Barrett Glasauer', 'CTO', 1),
-('Chris Hancock', 'Engineering Manager', 2),
-('Julian Early', 'Engineer', 3),
-('Michael Lorton', 'Engineer', 3),
-('Emily Pun', 'Designer', NULL),
-('Andres Green', 'COO', 1);
+('Ram', 'CEO', NULL),
+('Krishna', 'CTO', 1),
+('Dad', 'Engineering Manager', 2),
+('MOM', 'Engineer', 3),
+('alpanso', 'Engineer', 3),
+('Pun', 'Designer', NULL),
+('Green', 'COO', 1);
