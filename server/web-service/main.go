@@ -43,9 +43,12 @@ func main() {
 }
 
 func employeesHandler(w http.ResponseWriter, r *http.Request) {
+    // enable CORS
+    w.Header().Set("Access-Control-Allow-Origin", "*")
     w.Header().Set("Content-Type", "application/json")
 
     var employees []Employee
+    fmt.Println("server got hit")
 
     // If DB is available, try fetching from it
     if db != nil {
@@ -60,7 +63,6 @@ func employeesHandler(w http.ResponseWriter, r *http.Request) {
                 }
             }
     }
-
 
     // If found in DB, return those
     if len(employees) > 0 {
